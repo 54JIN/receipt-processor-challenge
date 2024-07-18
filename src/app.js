@@ -37,6 +37,12 @@ app.post('/receipts/process' , (req, res) => {
 */
 app.get('/receipts/:id/points', (req, res) => {
     const id = req.params.id;
+    const result = receipts[id]
+
+    if(!result){
+        return res.status(500).send()
+    }
+
     res.send({ points: receipts[id] })
 })
 
