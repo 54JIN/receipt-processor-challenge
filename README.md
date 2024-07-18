@@ -16,6 +16,18 @@
     * npm i
 5. Once the npm packages are installed and a node module folder is created, to activate the API - in the terminal execute the line:
     * npm run dev
+        - If port 3000 is already running in your system you have two options:
+            * Option 1:
+                - Terminate the application running in the port 3000 in your local system
+                    1. Execute the line:
+                        * lsof -i :3000
+                            - This will give you a list of applications running on that port
+                            - Identify the `PID` of the application
+                                * For example it can look like `90809`, `1035`, or `0000`, etc.
+                        * kill -9: `PID`
+            * Option 2:
+                - Manually Change the port number in the `index.js` file (`src/index.js`)
+                    * `const port = 3000`
 
 ---
 ## Storage of data
