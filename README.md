@@ -3,7 +3,7 @@
 ---
 ## Setting up the environment
 
-1. Download & install Node.js (Choose the correct environment macOS, Windows, Linux, etc. ) - Installing Node.js should automatiacally provide NPM as its included in the download.
+1. Download & install Node.js (Choose the correct environment macOS, Windows, Linux, etc. ) - Installing Node.js should automatically provide NPM as it's included in the download.
     * https://nodejs.org/en/
         - Verify node is installed by executing the line:
             * node -v
@@ -12,7 +12,7 @@
 2. Open up a text editor - visual studio code provided 
     * https://code.visualstudio.com
 3. Open up the folder
-4. Install all necesssary npm packages, in the terminal execute the line:
+4. Install all necessary npm packages, in the terminal execute the line:
     * npm i
 5. Once the npm packages are installed and a node module folder is created, to activate the API - in the terminal execute the line:
     * npm run dev
@@ -24,7 +24,7 @@
                             - This will give you a list of applications running on that port
                             - Identify the `PID` of the application
                                 * For example it can look like `90809`, `1035`, or `0000`, etc.
-                        * kill -9: `PID`
+                        * kill -9 `PID`
             * Option 2:
                 - Manually Change the port number in the `index.js` file (`src/index.js`)
                     * `const port = 3000`
@@ -32,7 +32,7 @@
 ---
 ## Storage of data
 
-1. As data does not need to persist when the application stops, data is stored locally in a varaible called receipts.
+1. As data does not need to persist when the application stops, data is stored locally in a variable called receipts.
 
 ## Paths
 
